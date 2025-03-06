@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
     & a {
     font-family: "poppins", serif; 
@@ -31,5 +32,29 @@ body {
 }
 
 .nav .icon {
+    font-size: 30px;
     display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left; 
+    }
 }

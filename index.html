@@ -15,28 +15,15 @@
     <link rel="stylesheet" href="styles/reset.css">
 </head>
 <body>
-    <header>
-        <div class="nav" id="myNav">
-            <h2 class="nav__logo"><a href="#"><i class="fa-solid fa-house"></i></a></h2>
-                <a href="#">Work</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Work</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         </div>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myNav");
-            if (x.className === "nav") {
-                x.className += "responsive";
-            } else {
-                x.className ="nav";
-            }
-        }
-    </script>
-    </header>
     
 </body>
 </html>

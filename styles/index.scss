@@ -1,60 +1,30 @@
 body {
     margin: auto;
     height: 100vh;
-    background: #C9D6FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-color: white;
 }
 
-.nav {
-    margin-top: 20px; 
-    width: 100%;
+.topnav {
+    background-color: black;
+    color: white;
     height: 40px; 
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+}
 
-    & a {
+.topnav a {
+    color: white;
     font-family: "poppins", serif; 
     font-size: 20px;
-    color: #000; 
     text-decoration: none; 
-    }
-
-        & a:hover {
-            color: #686e83;
-        }
 }
 
-.fa-house {
-    font-size: 30px;
+.topnav a:hover {
+    color: grey;
 }
 
-.nav .icon {
-    font-size: 30px;
-    display: none;
-}
-
-@media screen and (max-width: 320px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left; 
-    }
-}
